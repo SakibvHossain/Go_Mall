@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/inout_logo09"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <ImageView
+        android:id="@+id/signin_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dim_8dp"
+        android:contentDescription="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@mipmap/loginlogo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/quantity_number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:transitionName="@string/Email"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_field"
+        app:layout_constraintEnd_toEndOf="@+id/signin_field"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/signin_field"
+        app:layout_constraintTop_toTopOf="@+id/signin_field"
+        app:layout_constraintVertical_bias="0.451"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="@dimen/font_14" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sign_in_user_field_2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:transitionName="@string/Password"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_field"
+        app:layout_constraintEnd_toEndOf="@+id/signin_field"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="@+id/signin_field"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_number"
+        app:layout_constraintVertical_bias="0.106"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="@dimen/font_14" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signin_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt1"
+        android:fontFamily="@font/baumans"
+        android:textColor="@color/nin"
+        android:transitionName="@string/loginnow"
+        app:layout_constraintBottom_toTopOf="@+id/quantity_number"
+        app:layout_constraintEnd_toEndOf="@+id/signin_field"
+        app:layout_constraintStart_toStartOf="@+id/quantity_number"
+        app:layout_constraintTop_toTopOf="@+id/signin_field"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/signin_btn_img"
+        android:layout_width="171dp"
+        android:layout_height="31dp"
+        android:transitionName="@string/si3"
+        android:contentDescription="@string/forget"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_field"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_user_field_2"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_user_field_2"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_field_2"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@mipmap/signin_btn" />
+
+    <TextView
+        android:id="@+id/sign_intxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baumans"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_btn_img"
+        app:layout_constraintEnd_toEndOf="@+id/signin_btn_img"
+        app:layout_constraintStart_toStartOf="@+id/signin_btn_img"
+        app:layout_constraintTop_toTopOf="@+id/signin_btn_img" />
+
+
+
+    <ImageView
+        android:id="@+id/signin_back"
+        android:layout_width="@dimen/size45dp"
+        android:layout_height="@dimen/size45dp"
+        android:contentDescription="@string/forget"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/ic_arrow_back_24px" />
+
+    <TextView
+        android:id="@+id/signin_forget"
+        android:layout_width="79dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/baumans"
+        android:text="@string/forget"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_btn_img"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_user_field_2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_user_field_2"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_field_2"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/signin_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/create"
+        android:textColor="@color/nin"
+        android:textSize="@dimen/font_14"
+        android:transitionName="@string/create"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_field"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_user_field_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/signin_forget"
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn_img"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_signin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="81dp"
+        android:layout_height="16dp"
+        android:visibility="invisible"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toTopOf="@+id/signin_btn_img"
+        app:layout_constraintEnd_toEndOf="@+id/signin_btn_img"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="@+id/signin_btn_img"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_field_2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/Email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintBottom_toTopOf="@+id/quantity_number"
+        app:layout_constraintEnd_toEndOf="@+id/quantity_number"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/quantity_number"
+        app:layout_constraintTop_toBottomOf="@+id/signin_textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_user_field_2"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_user_field_2"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_user_field_2"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_number"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/quantity_number"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:srcCompat="@mipmap/ic_email_black_18dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_user_field_2"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:srcCompat="@mipmap/ic_lock_black_18dp" />
+
+    <TextView
+        android:id="@+id/signin_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/cannotbe"
+        android:textColor="@color/red1"
+        android:textSize="@dimen/font_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_user_field_2"
+        app:layout_constraintEnd_toEndOf="@+id/signin_field"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/quantity_number"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/signin_textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/cannotbe"
+        android:textColor="@color/red1"
+        android:textSize="@dimen/font_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/progressBar_signin"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_user_field_2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/progressBar_signin"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_field_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6_mainview"
+        android:layout_width="@dimen/size45dp"
+        android:layout_height="@dimen/size45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/signin_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toEndOf="@+id/signin_back"
+        app:layout_constraintTop_toTopOf="@+id/signin_back"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/baseline_clear_black_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

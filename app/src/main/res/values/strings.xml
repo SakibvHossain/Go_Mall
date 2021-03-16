@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Go Mall</string>
+    <string name="splash_txt">Your Happiness is our pleasure</string>
+    <string name="txt1">Get your desire here</string>
+    <string name="Username">Username</string>
+    <string name="Fullname">Fullname</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Phone">Phone</string>
+    <string name="ConfirmPassword">ConfirmPassword</string>
+    <string name="forget">Forget Password?</string>
+    <string name="login">Sign In</string>
+    <string name="Signup_message">Do not have an account? Sign Up</string>
+    <string name="txt2">Take our access from here</string>
+    <string name="signup">Sign Up</string>
+    <string name="already">Already have an account? Sign In</string>
+    <string name="user">Demo Name</string>
+    <string name="txt_1">Balance</string>
+    <string name="s">$123</string>
+    <string name="re">Reset</string>
+    <string name="loginnow">Now Login</string>
+    <string name="cannotbe">Field cannot be empty</string>
+    <string name="notvalidemail">Please enter a valid email</string>
+    <string name="notvalidpass">Please enter a valid password</string>
+    <string name="welcome">Welcome To our Mall</string>
+    <string name="create">Create new account</string>
+    <string name="full_phone">0191229222</string>
+    <string name="full_pass">Done</string>
+    <string name="update2">Reset Password</string>
+    <string name="Update">Update</string>
+    <string name="Go">&lt;&lt; Go back</string>
+    <string name="view">VIEW ALL</string>
+    <string name="huawei">HUAWEI P20</string>
+    <string name="sd">SD 620 Processor</string>
+    <string name="tk">Tk.87,000/-</string>
+    <string name="deal">Deals of the day!</string>
+    <string name="signuptxt">Take our access from here</string>
+    <string name="recovery">Recovery email sent successfully</string>
+    <string name="failed">No user found such an email</string>
+    <string name="resetpass">Enter your email address</string>
+    <string name="title_activity_main_user">MainUserActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_bar_txtname">Not Signed In</string>
+    <string name="nav_bar_txtemail">Email: Example@gmail.com</string>
+    <string name="nav_bar_txtphone">Phone</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title">Communication and Exits</string>
+    <string name="si3">Connect with our ways</string>
+    <string name="login7">LOG  IN</string>
+    <string name="homes">Home</string>
+    <string name="order">Orders</string>
+    <string name="reward">Rewards</string>
+    <string name="cart">Cart</string>
+    <string name="wish">Wishlist</string>
+    <string name="account">Account</string>
+    <string name="share">Share</string>
+    <string name="info">Info</string>
+    <string name="help">Help</string>
+    <string name="exit">Exit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_go_main">GoMainActivity</string>
+    
+    
+    <string-array name="Bangladesh_states">
+        <item>Dhaka</item>
+        <item>Barisal</item>
+        <item>Shelhet</item>
+        <item>Maymonshing</item>
+        <item>Chottogram</item>
+        <item>Noakhali</item>
+        <item>Rajshahi</item>
+        <item>Kumilla</item>
+        <item>Patuakhali</item>
+    </string-array>
+</resources>

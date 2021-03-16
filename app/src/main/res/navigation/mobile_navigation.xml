@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_main_home">
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.alfaco_1.testno1.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.alfaco_1.testno1.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/nav_sign_in"
+        android:name="com.alfaco_1.testno1.SignIn"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+    <fragment
+        android:id="@+id/nav_main_home"
+        android:name="com.alfaco_1.testno1.HomeFragment"
+        android:label="fragment_home2"
+        tools:layout="@layout/fragment_home2" />
+    <fragment
+        android:id="@+id/nav_main_cart"
+        android:name="com.alfaco_1.testno1.MyCartFragment"
+        android:label="fragment_my_cart"
+        tools:layout="@layout/fragment_my_cart" />
+    <fragment
+        android:id="@+id/nav_main_order"
+        android:name="com.alfaco_1.testno1.MyOrdersFragment"
+        android:label="fragment_my_orders"
+        tools:layout="@layout/fragment_my_orders" />
+    <fragment
+        android:id="@+id/nav_mywishlist"
+        android:name="com.alfaco_1.testno1.MyWishlistFragment"
+        android:label="fragment_my_wishlist"
+        tools:layout="@layout/fragment_my_wishlist" />
+    <fragment
+        android:id="@+id/nav_myrewards"
+        android:name="com.alfaco_1.testno1.MyRewardsFragment"
+        android:label="fragment_my_rewards"
+        tools:layout="@layout/fragment_my_rewards" />
+    <fragment
+        android:id="@+id/nav_my_account"
+        android:name="com.alfaco_1.testno1.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" />
+</navigation>

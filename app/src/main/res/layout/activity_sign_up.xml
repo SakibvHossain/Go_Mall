@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/inout_logo099999"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/loginlogo" />
+
+    <TextView
+        android:id="@+id/create_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/baumans"
+        android:text="@string/txt2"
+        android:textColor="@color/nin"
+        android:textSize="@dimen/font_14"
+        android:transitionName="@string/loginnow"
+        app:layout_constraintEnd_toEndOf="@+id/create_textInputLayout2"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout2"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:transitionName="@string/Email"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/create_txt"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="@dimen/font_14" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_textInputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout2"
+        app:layout_constraintVertical_bias="0.106"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="@dimen/font_14" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="272dp"
+        android:layout_height="54dp"
+        android:transitionName="@string/Password"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/create_textInputLayout3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout3"
+        app:layout_constraintVertical_bias="0.180"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="@dimen/font_14" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_10"
+        android:fontFamily="@font/baumans"
+        app:layout_constraintBottom_toTopOf="@+id/create_textInputLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/create_txt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout2"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        app:srcCompat="@mipmap/ic_email_black_18dp" />
+
+    <TextView
+        android:id="@+id/create_textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cannotbe"
+        android:textColor="@color/red1"
+        android:textSize="@dimen/font_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/create_textInputLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/create_textInputLayout2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout3"
+        app:layout_constraintTop_toTopOf="@+id/textView14"
+        app:srcCompat="@mipmap/ic_phone_black_18dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/Phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintBottom_toTopOf="@+id/create_textInputLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/create_textView13"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cannotbe"
+        android:textColor="@color/red1"
+        android:textSize="@dimen/font_10"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/create_textInputLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/create_textInputLayout3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout4"
+        app:layout_constraintTop_toTopOf="@+id/textView16"
+        app:srcCompat="@mipmap/ic_lock_black_18dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baumans"
+        android:text="@string/Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintBottom_toTopOf="@+id/create_textInputLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cannotbe"
+        android:textColor="@color/red1"
+        android:textSize="@dimen/font_10"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/create_textInputLayout4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout4" />
+
+    <ImageView
+        android:id="@+id/create_imageView11"
+        android:layout_width="162dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/title"
+        android:transitionName="@string/si3"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@mipmap/signin_btn_logo" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textColor="@color/background"
+        android:textSize="@dimen/font_14"
+        android:fontFamily="@font/baumans"
+        app:layout_constraintBottom_toBottomOf="@+id/create_imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/create_imageView11"
+        app:layout_constraintStart_toStartOf="@+id/create_imageView11"
+        app:layout_constraintTop_toTopOf="@+id/create_imageView11" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/baumans"
+        android:text="@string/loginnow"
+        android:textColor="@color/nin"
+        android:textSize="@dimen/font_11"
+        android:transitionName="@string/create"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/create_imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.724" />
+
+    <ProgressBar
+        android:id="@+id/create_progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="74dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="4dp"
+        android:indeterminate="true"
+        android:maxWidth="74dp"
+        android:maxHeight="@dimen/dom15dp"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/nin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/create_imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/create_textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/create_textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/create_textInputLayout4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ic_arrow_back_24px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

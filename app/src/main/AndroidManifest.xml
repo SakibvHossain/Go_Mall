@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alfaco_1.testno1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/applogo1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewAllActivity"></activity>
+        <activity android:name=".MyAdressesActivity" />
+        <activity android:name=".AddAddressActivity" />
+        <activity android:name=".DeliveryActivity" />
+        <activity android:name=".OrderDetailsActivity" />
+        <activity
+            android:name=".GoMainActivity"
+            android:label="@string/title_activity_go_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProductDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ConnectionFailed"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SignUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SignIn"
+            android:screenOrientation="portrait" />
+        <activity android:name=".InOutScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ForgetPassword"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".UserProfile"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
