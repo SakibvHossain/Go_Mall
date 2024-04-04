@@ -13,6 +13,7 @@
 ### Database
 Firebase used as database system for the application
 
+### UI
 ![1689362127723](https://github.com/SakibvHossain/Go_Mall/assets/92059000/05f76e95-4759-4f1d-918d-c6793e4b113b)
 ![1689362388000](https://github.com/SakibvHossain/Go_Mall/assets/92059000/3aaa31e0-9183-4ea5-a18f-8b98add83160)
 ![1689362459794](https://github.com/SakibvHossain/Go_Mall/assets/92059000/06fe90f6-a982-4346-a9d7-45d2dd43de9c)
